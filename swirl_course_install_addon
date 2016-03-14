@@ -1,0 +1,4 @@
+Try the following:
+1. Go to this page and click Download ZIP
+2. In the R console run this command: install_course_zip(file.choose(), multi = TRUE, which_course = "R Programming")
+3. Select the zip file you just downloaded.
