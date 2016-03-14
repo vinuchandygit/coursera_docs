@@ -1,0 +1,61 @@
+I am trying very hard to install the R programming course on swirl . But now this error has occured
+
+library(swirl)
+uninstall_all_courses()
+All courses uninstalled successfully!
+install_from_swirl("R_Programming")
+after this even after waiting for about 20 minutes I am still not getting any further. It is like Rstudio is stuck. My internet connection is quite good. 
+AS I am connecte to a proxy server, I used this (found on another discussion thread ) 
+library(RCurl)
+library(httr)
+set_config( config( ssl_verifypeer = 0L ) )
+After this I proceeded to work normally but nothing productive was happening
+
+library(swirl)
+| Hi! Type swirl() when you are ready to begin.
+
+Attaching package: ‘swirl’
+
+The following object is masked from ‘package:RCurl’:
+
+reset
+install_from_swirl("R Programming")
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+Failed writing received data to disk/application
+
+swirl()
+| Welcome to swirl!
+
+| Please sign in. If you've been here before, use the same name as you did then. If
+| you are new, call yourself something unique.
+
+What shall I call you?
+
+| To begin, you must install a course. I can install a course for you from the
+| internet, or I can send you to a web page
+| (https://github.com/swirldev/swirl_courses) which will provide course options and
+| directions for installing courses yourself. (If you are not connected to the
+| internet, type 0 to exit.)
+
+1: R Programming: The basics of programming in R
+2: Regression Models: The basics of regression modeling in R
+3: Don't install anything for me. I'll do it myself.
+
+Selection: 1
+
+| Sorry, but I'm unable to fetch ‘R Programming: The basics of programming in R’ right
+| now. Are you sure you have an internet connection? If so, would you like to try
+| again or visit the course repository for instructions on how to install a course
+| manually? Type 0 to exit.
+
+1: Try again!
+2: Send me to the course repository for manual installation.
+
+Selection:
+
+| Leaving swirl now. Type swirl() to resume.
+
+library(swirl)
+uninstall_all_courses()
+All courses uninstalled successfully!
+install_from_swirl("R_Programming")
